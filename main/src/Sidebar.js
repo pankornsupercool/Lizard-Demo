@@ -6,9 +6,12 @@ const Sidebar = () =>{
         flex flex-col bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
 
             <SidebarIcon icon={<VscGithubInverted size="28"/>} text={"Home"}/>
+            <Divider/>
             <SidebarIcon icon={<VscGithubInverted size="28"/>} text={"Exchange"}/>
             <SidebarIcon icon={<VscGithubInverted size="28"/>} text={"Stake"}/>
+            <Divider/>
             <SidebarIcon icon={<VscGithubInverted size="28"/>} text={"About"}/>
+            
         </div>
     );
 
@@ -22,6 +25,6 @@ const SidebarIcon =({icon, text}) =>(
         </span>
     </div>
 );
-
+const Divider = () => <hr className="sidebar-hr" />;
 
 export default Sidebar;
